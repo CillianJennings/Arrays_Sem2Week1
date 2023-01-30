@@ -23,11 +23,15 @@ public class ArrayDemo {
             System.out.println("Element at Index " + x + ": " + array[x]);
         }
 
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter a value: ");
-        array[10] = input.nextInt();
-        System.out.println("Result: " + array[10]);
-
+        try {
+            Scanner input = new Scanner(System.in);
+            System.out.println("Enter a value: ");
+            array[10] = input.nextInt();
+            System.out.println("Result: " + array[10]);
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Entered a value outside the array");
+        }
 
 
     }
