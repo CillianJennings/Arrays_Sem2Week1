@@ -18,13 +18,7 @@ public class ArrayListDemo {
         numbers.add(800);
         numbers.add(900);
         numbers.add(1000);
-
-        int indexValue = 0;
-
-        for(int value: numbers) {
-            System.out.println("Element at Index " + indexValue + ": " + value);
-            indexValue++;
-        }
+        loop(numbers);
 
         try {
             Scanner input = new Scanner(System.in);
@@ -34,6 +28,15 @@ public class ArrayListDemo {
         }
         catch(ArrayIndexOutOfBoundsException e){
             System.out.println("Entered a value outside the array");
+        }
+    }
+
+    public static void loop(ArrayList<Integer> numbers) {
+        int indexValue = 0;
+
+        for(int value: numbers) {
+            System.out.println("Element at Index " + indexValue + ": " + value);
+            indexValue++;
         }
     }
 }
