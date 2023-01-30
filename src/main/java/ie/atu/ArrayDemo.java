@@ -19,7 +19,7 @@ public class ArrayDemo {
         array[8] = 900;
         array[9] = 1000;
 
-        for(int x = 0; x<10; x++) {
+        for(int x = 0; x< array.length; x++) {
             System.out.println("Element at Index " + x + ": " + array[x]);
         }
 
