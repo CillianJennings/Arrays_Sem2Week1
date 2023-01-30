@@ -32,8 +32,5 @@ public class ArrayDemo {
         catch(ArrayIndexOutOfBoundsException e){
             System.out.println("Entered a value outside the array");
         }
-
-
     }
-
 }
