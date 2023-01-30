@@ -19,8 +19,11 @@ public class ArrayListDemo {
         numbers.add(900);
         numbers.add(1000);
 
-        for(int x = 0; x< numbers.size(); x++) {
-            System.out.println("Element at Index " + x + ": " + numbers.get(x));
+        int indexValue = 0;
+
+        for(int value: numbers) {
+            System.out.println("Element at Index " + indexValue + ": " + value);
+            indexValue++;
         }
 
         try {
